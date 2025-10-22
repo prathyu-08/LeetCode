@@ -4,10 +4,10 @@ class Solution:
             left, right = 0, len(nums) - 1
             index = -1
             while left <= right:
-                mid = (left + right) // 2
+                mid = (left + right) 
                 if nums[mid] == target:
                     index = mid
-                    right = mid - 1  # search left side
+                    right = mid - 1 
                 elif nums[mid] < target:
                     left = mid + 1
                 else:
@@ -21,7 +21,7 @@ class Solution:
                 mid = (left + right) // 2
                 if nums[mid] == target:
                     index = mid
-                    left = mid + 1  # search right side
+                    left = mid + 1  
                 elif nums[mid] < target:
                     left = mid + 1
                 else:
